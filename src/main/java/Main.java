@@ -17,7 +17,7 @@ public class Main {
 
         //task 1
         bus.remove("Ibrahim");
-        bus.add(0, "Ibrahim");
+        bus.addFirst("Ibrahim");
         //task2
         bus.remove("Rebecca");
         bus.add("Rebecca");
