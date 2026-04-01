@@ -1,34 +1,29 @@
-import java.util.ArrayList;
+void main() {
+    ArrayList<String> bus = new ArrayList<>();
+    bus.add("Ryan");
+    bus.add("Brandon");
+    bus.add("Rebecca");
+    bus.add("Richard");
+    bus.add("Jessica");
+    bus.add("Brian");
+    bus.add("Antoinne");
+    bus.add("Grace");
+    bus.add("Zee");
+    bus.add("Ibrahim");
 
-public class Main {
+    //task 1
+    bus.remove("Ibrahim");
+    bus.addFirst("Ibrahim");
+    //task2
+    bus.remove("Rebecca");
+    bus.add("Rebecca");
+    //task 3
+    bus.remove("Richard");
+    bus.add(bus.indexOf("Antoinne") - 1, "Richard");
 
-    static void main() {
-        ArrayList<String> bus = new ArrayList<>();
-        bus.add("Ryan");
-        bus.add("Brandon");
-        bus.add("Rebecca");
-        bus.add("Richard");
-        bus.add("Jessica");
-        bus.add("Brian");
-        bus.add("Antoinne");
-        bus.add("Grace");
-        bus.add("Zee");
-        bus.add("Ibrahim");
+    //task 4
+    bus.remove("Ryan");
+    bus.add(bus.indexOf("Rebecca") - 1, "Ryan");
 
-        //task 1
-        bus.remove("Ibrahim");
-        bus.addFirst("Ibrahim");
-        //task2
-        bus.remove("Rebecca");
-        bus.add("Rebecca");
-        //task 3
-        bus.remove("Richard");
-        bus.add(bus.indexOf("Antoinne")-1, "Richard");
-
-        //task 4
-        bus.remove("Ryan");
-        bus.add(bus.indexOf("Rebecca")-1, "Ryan");
-
-        System.out.println(bus);
-    }
+    IO.println(bus);
 }
